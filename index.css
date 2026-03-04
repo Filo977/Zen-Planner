@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-50 text-zinc-800 font-sans overflow-hidden antialiased;
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+    min-height: 100vh;
+    letter-spacing: -0.01em;
+  }
+}
+
+.zen-gradient {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.wave-bg {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(147,197,253,0.2) 50%, rgba(59,130,246,0.15) 100%);
+}
+
+.sphere-shadow {
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+}
+
+/* Custom Zen Scrollbar */
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.15);
+  background-clip: content-box;
+}
